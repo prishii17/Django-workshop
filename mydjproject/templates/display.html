@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <tr>
+             <th>ID</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Date</th>
+        </tr>
+    </tr>
+    {% for pdata in mydata %}
+    <tr>
+        <td>{{ pdata.id }}</td>
+        <td>{{ pdata.sname }}</td>
+        <td>{{ pdata.smobile }}</td>
+        <td>{{ pdata.semail }}</td>
+        <td>{{ pdata.createdAt }}</td>
+    </tr>
+    {% endfor %}
+    </table>
